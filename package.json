@@ -1,0 +1,61 @@
+{
+  "name": "selfer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "A powerful self-bot built with Electron and Discord.js for automation and interaction.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx electron .",
+    "dev": "electron .", 
+    "build": "electron-builder",
+    "lint": "eslint .",
+    "prettify": "prettier --write .",
+    "start:dev": "cross-env NODE_ENV=development npx electron ."
+  },
+  "keywords": [
+    "discord",
+    "selfbot",
+    "electron",
+    "automation",
+    "bot",
+    "discord.js"
+  ],
+  "author": "RlxChap2",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RlxChap2/selfer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RlxChap2/selfer/issues"
+  },
+  "homepage": "https://github.com/RlxChap2/selfer#readme",
+  "dependencies": {
+    "discord.js-selfbot-v13": "^3.4.6",
+    "dotenv": "^16.4.7",
+    "electron": "^33.3.1",
+    "i": "^0.3.7",
+    "npm": "^11.0.0",
+    "axios": "^1.4.0",
+    "log4js": "^6.3.0",
+    "eslint": "^8.40.0",
+    "electron-builder": "^24.6.1",
+    "cross-env": "^7.0.3"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "config": {
+    "appId": "com.yourname.selfer",
+    "appName": "Selfer"
+  },
+  "directories": {
+    "build": "./dist"
+  }
+}

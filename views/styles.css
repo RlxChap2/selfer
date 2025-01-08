@@ -1,0 +1,193 @@
+/* Reset default styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background: #1e1e2f;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Hidden elements */
+.hidden {
+  display: none;
+}
+
+/* Container styling */
+.container {
+  margin: 20px;
+  padding: 25px 60px;
+  background: #2c2f33;
+  border-radius: 16px;
+  color: #ffffff;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Avatar styling */
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #ffcc00;
+  box-shadow: 0 4px 10px rgba(255, 204, 0, 0.4);
+}
+
+/* Textarea styling */
+textarea {
+  width: 100%;
+  height: 120px;
+  margin: 15px 0;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  color: #ffffff;
+  background: #3a3a4f;
+  border: 1px solid #44445a;
+  outline: none;
+  transition: all 0.2s ease;
+  resize: none;
+}
+
+textarea:focus {
+  background: #44445a;
+  border-color: #ffcc00;
+  box-shadow: 0 0 8px #ffcc00;
+}
+
+/* Heading styling */
+h1 {
+  font-size: 30px;
+  color: #ffcc00;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Form group styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input styling */
+input[type="text"],
+select {
+  padding: 12px;
+  margin: 5px;
+  font-size: 16px;
+  border: 1px solid #44445a;
+  border-radius: 8px;
+  outline: none;
+  background: #3a3a4f;
+  color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+input[type="text"]:focus,
+select:focus {
+  background: #44445a;
+  border-color: #ffcc00;
+  box-shadow: 0 0 6px #ffcc00;
+}
+
+/* Button styling */
+button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #ffcc00;
+  color: #1e1e2f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  background: #ffaa00;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 170, 0, 0.5);
+}
+
+/* Status styling */
+#status {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #cccccc;
+  text-align: center;
+}
+
+/* User Info Styling */
+.user-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.user-info img.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid #ffcc00;
+  box-shadow: 0 4px 10px rgba(255, 204, 0, 0.3);
+}
+
+.user-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #dddddd;
+}
+
+.user-info p strong {
+  color: #ffffff;
+}
+
+/* Code status styling */
+#code-status {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+/* Adjust event dropdown styling */
+select {
+  appearance: none;
+  cursor: pointer;
+  background: #3a3a4f;
+  color: #ffffff;
+}
+
+select:focus {
+  background: #44445a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  textarea {
+    height: 100px;
+  }
+}

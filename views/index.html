@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord Selfbot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Login Section -->
+  <div id="login-container" class="container">
+    <h1>🤖 Discord Selfbot</h1>
+    <p id="status">Please enter your token to log in.</p>
+    <div class="form-group">
+      <input type="text" id="tokenInput" placeholder="Enter your Discord token..." />
+      <button id="loginBtn">Login</button>
+    </div>
+  </div>
+
+  <!-- User Info Section -->
+  <div id="user-info-container" class="container hidden">
+    <div id="userInfo"></div>
+  </div>
+
+  <!-- Event Editor Section -->
+  <div id="event-container" class="container hidden">
+    <h1>🛠️ Event Editor</h1>
+    <p id="code-status">Select an event and write your code:</p>
+    <div class="form-group">
+      <label for="event">Select an Event:</label>
+      <select name="event" id="event">
+        <option value="ready">ready</option>
+        <option value="messageCreate">messageCreate</option>
+        <option value="interactionCreate">interactionCreate</option>
+        <!-- Add more events as needed -->
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="eventInteraction">Event Interaction:</label>
+      <input type="text" id="eventInteraction" placeholder="Event Interaction">
+    </div>
+    <div class="form-group">
+      <label for="eventCode">Event Code:</label>
+      <textarea id="eventCode" placeholder="Write your event code here..."></textarea>
+    </div>
+    <button id="submitCode">Submit Code</button>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
